@@ -1,0 +1,8 @@
+# Ignore Android folder for Expo managed workflow
+android/
+android_backup/
+android_old/
+
+# Ignore iOS folder if exists
+ios/
+

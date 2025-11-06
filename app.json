@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "Huynh Ngoc Ky - SE182995",
+    "slug": "huynh-ngoc-ky-se182995",
+    "version": "1.0.0",
+    "sdkVersion": "54.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#6200ee",
+      "resizeMode": "contain"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.huynhngocky.se182995"
+    },
+    "android": {
+      "package": "com.huynhngocky.se182995",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "backgroundColor": "#6200ee"
+      },
+      "permissions": [
+        "INTERNET",
+        "ACCESS_NETWORK_STATE"
+      ]
+    },
+    "scheme": "huynhngocky",
+    "extra": {
+      "eas": {
+        "projectId": "66e5df13-9f30-4bdf-ad08-71333165e552"
+      }
+    },
+    "owner": "averyren"
+  }
+}
