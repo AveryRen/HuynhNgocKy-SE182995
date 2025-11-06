@@ -177,7 +177,6 @@ const ListScreen = ({navigation}) => {
 
   return (
     <View style={styles.container}>
-      {/* Search Bar */}
       <View style={styles.searchContainer}>
         <TextInput
           style={styles.searchInput}
@@ -188,7 +187,6 @@ const ListScreen = ({navigation}) => {
         />
       </View>
 
-      {/* Category Filter - Horizontal Scroll */}
       {categories.length > 0 && (
         <View style={styles.categoryContainer}>
           <FlatList
@@ -222,7 +220,6 @@ const ListScreen = ({navigation}) => {
         </View>
       )}
 
-      {/* Products List */}
       <FlatList
         data={filteredProducts}
         renderItem={renderProductItem}

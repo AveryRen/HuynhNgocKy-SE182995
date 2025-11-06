@@ -92,7 +92,6 @@ const FavoritesScreen = ({navigation}) => {
 
   return (
     <View style={styles.container}>
-      {/* Search Bar */}
       <View style={styles.searchContainer}>
         <TextInput
           style={styles.searchInput}
@@ -103,7 +102,6 @@ const FavoritesScreen = ({navigation}) => {
         />
       </View>
 
-      {/* Category Filter - Horizontal Scroll */}
       {categories.length > 0 && (
         <View style={styles.categoryContainer}>
           <FlatList
@@ -137,7 +135,6 @@ const FavoritesScreen = ({navigation}) => {
         </View>
       )}
 
-      {/* Favorites List */}
       {favoriteProducts.length === 0 ? (
         <View style={styles.emptyContainer}>
           <Text style={styles.emptyIcon}>❤️</Text>

@@ -4,7 +4,6 @@ const DATA_KEY = '@products_data';
 const FAVORITES_KEY = '@favorites';
 
 class DatabaseService {
-  // Save products data to local storage
   async saveProducts(products) {
     try {
       const jsonValue = JSON.stringify(products);
@@ -16,7 +15,6 @@ class DatabaseService {
     }
   }
 
-  // Get products from local storage
   async getProducts() {
     try {
       const jsonValue = await AsyncStorage.getItem(DATA_KEY);
@@ -27,7 +25,6 @@ class DatabaseService {
     }
   }
 
-  // Get favorite IDs
   async getFavoriteIds() {
     try {
       const jsonValue = await AsyncStorage.getItem(FAVORITES_KEY);
@@ -38,7 +35,6 @@ class DatabaseService {
     }
   }
 
-  // Add favorite
   async addFavorite(productId) {
     try {
       const favorites = await this.getFavoriteIds();
@@ -54,7 +50,6 @@ class DatabaseService {
     }
   }
 
-  // Remove favorite
   async removeFavorite(productId) {
     try {
       const favorites = await this.getFavoriteIds();
@@ -68,7 +63,6 @@ class DatabaseService {
     }
   }
 
-  // Check if item is favorite
   async isFavorite(productId) {
     try {
       const favorites = await this.getFavoriteIds();
@@ -79,7 +73,6 @@ class DatabaseService {
     }
   }
 
-  // Get favorite products
   async getFavoriteProducts() {
     try {
       const favorites = await this.getFavoriteIds();
